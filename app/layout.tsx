@@ -4,32 +4,41 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'optic. | Premium Eyewear & Sustainable Frames',
-  description: 'Discover thoughtfully designed glasses in casual, minimal, and funky styles. Shop, explore, or sell gently loved frames with our circular edit.',
+  description:
+    'Discover thoughtfully designed glasses in casual, minimal, and funky styles. Shop, explore, or sell gently loved frames with our circular edit.',
   generator: 'v0.app',
+
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: '/orbit.github.io/icon-light-32x32.png',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: '/orbit.github.io/icon-dark-32x32.png',
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/icon.svg',
+        url: '/orbit.github.io/icon.svg',
         type: 'image/svg+xml',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: '/orbit.github.io/apple-icon.png',
   },
 }
 
 export const viewport: Viewport = {
   colorScheme: 'light dark',
+
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
+    {
+      media: '(prefers-color-scheme: light)',
+      color: 'white',
+    },
+    {
+      media: '(prefers-color-scheme: dark)',
+      color: 'black',
+    },
   ],
 }
 
@@ -42,6 +51,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased">
         {children}
+
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
