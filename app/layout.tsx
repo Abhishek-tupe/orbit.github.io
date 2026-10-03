@@ -8,25 +8,9 @@ export const metadata: Metadata = {
     'Discover thoughtfully designed glasses in casual, minimal, and funky styles. Shop, explore, or sell gently loved frames with our circular edit.',
   generator: 'v0.app',
 
-  icons: {
-    icon: [
-      {
-        url: '/orbit.github.io/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/orbit.github.io/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/orbit.github.io/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/orbit.github.io/apple-icon.png',
-  },
-}
-
+icons: {
+  icon: '/orbit.github.io/favicon.svg',
+},
 export const viewport: Viewport = {
   colorScheme: 'light dark',
 
