@@ -497,15 +497,12 @@ export default function Page() {
                       className="drawer-item"
                       key={item.id}
                     >
-                      <div
-                        className={`mini-visual tone-${item.tone}`}
-                      >
-                        <div className="glasses">
-                          <span />
-                          <span />
-                          <i />
-                          <i />
-                        </div>
+                      <div className={`mini-visual tone-${item.tone}`}>
+                        <img
+                          className="cart-product-image"
+                          src={item.image}
+                          alt={`${item.name} ${item.category} eyewear`}
+                          />
                       </div>
 
                       <div>
