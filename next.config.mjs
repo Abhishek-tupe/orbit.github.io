@@ -2,6 +2,8 @@
 const nextConfig = {
   output: "export",
 
+  basePath: "/orbit.github.io",
+
   typescript: {
     ignoreBuildErrors: true,
   },
